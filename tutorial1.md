@@ -20,47 +20,53 @@ student=dict(ID=[1, 2], names=["Joel Ndoumbe", "Paule Hadja"], age=[1,2], level=
 #Create a database to save teacher
 teacher={'ID': [1], 'names':["Edinio Zacko"], 'age':[30], 'sex':["Male"], 'courseID':[1]}
 #Create a database to register courses.
-course={'ID':[1, 2], 'titles':["Python programming", "Machine Learning"], 'category':["Computer Science", "Mathematics"], 'teacherID':[1,1]}
+course={'ID':[1, 2], 'names':["Python programming", "Machine Learning"], 'category':["Computer Science", "Mathematics"], 'teacherID':[1,1]}
 #Create a database to save the notes
 note={'ID':[1,2], 'studentID':[1,2], 'courseID':[1,1], 'values':[60,60]}
 
+#Search items from databases
+def getID(Name, database):
+#this function finds and returns ID of items from student, teacher and course databases
+   for index in range(len(database['names'])):
+      if Name in database['names'][index]:
+         return database['ID'][index]
+         break
+   return -1
 
-1. Numbered
-2. List
+def getNote(Name, courseTitle):         
+   studentID= getID(Name, student)
+   courseID= getID(courseTitle, course)
+   
+   for index in range(len(note['ID'])):
+      if note['studentID'][index]==studentID and note['courseID'][index]==courseID:
+            return note['values'][index]
+            break
+   return -1
 
-**Bold** and _Italic_ and `Code` text
+#Add items to student database
+def AddStudent(*args):
+   student['ID'].append(len(student['ID'])+1)
+   student['names'].append(args[0])
+   student['age'].append(args[1])
+   student['level'].append(args[2])
+   student['sex'].append(args[3])
 
-[Link](url) and ![Image](src)
+#Remove items from student database
+def RemoveStudent(Name):
+   studentID= getID(Name, student)
+   student['ID'].remove(studentID)
+   student['names'].remove(student['names'][studentID-1])
+   student['age'].remove(student['age'][studentID-1])
+   student['level'].remove(student['level'][studentID-1])
+   student['sex'].remove(student['sex'][studentID-1])
+
+#Modify items of student database
+def setNote(Name, courseTitle, Value):
+   studentID= getID(Name, student)
+   courseID= getID(courseTitle, course)
+   
+   for index in range(len(note['ID'])):
+      if note['studentID'][index]==studentID and note['courseID'][index]==courseID:
+         note['values'][index]= Value
+
 ```
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gbazack/PythonProgramming/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
