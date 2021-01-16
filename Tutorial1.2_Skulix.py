@@ -59,6 +59,28 @@ class teacher(Person):
 		self.courseID= CourseId
 
 #Create a class for courses.
-course={'ID':[1, 2], 'names':["Python programming", "Machine Learning"], 'category':["Computer Science", "Mathematics"], 'teacherID':[1,1]}
-#Create a database to save the notes.
-note={'ID':[1, 2, 3, 4], 'studentID':[1,2,1,2], 'courseID':[1,1,2,2], 'values':[60, 60, 50, 50]}
+class course(Entity):
+  def __init__ (self, category, teacherID):
+    super().__init__(ID, names)
+    self.category= category
+    self.teacherID= teacherID
+  
+  def getCategory(self):
+    return self.category
+  def getTeacherID(self):
+    return self.teacherID
+  
+  def setCategory(self, Category):
+    self.category= Category
+  def setTeacherID(self, TeacherId):
+    self.teacherID= TeacherId
+
+#Create a class for notes
+class note():
+  def __init__(self, ID, studentID, courseID, values):
+    self.ID= ID
+    self.studentID= studentID
+    self.courseID= courseID
+    self.values= values
+  
+  def 
