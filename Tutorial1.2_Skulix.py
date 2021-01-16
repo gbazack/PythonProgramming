@@ -58,7 +58,7 @@ class teacher(Person):
 	def setCourseID(self, CourseId):
 		self.courseID= CourseId
 
-#Create a database to register courses.
+#Create a class for courses.
 course={'ID':[1, 2], 'names':["Python programming", "Machine Learning"], 'category':["Computer Science", "Mathematics"], 'teacherID':[1,1]}
 #Create a database to save the notes.
 note={'ID':[1, 2, 3, 4], 'studentID':[1,2,1,2], 'courseID':[1,1,2,2], 'values':[60, 60, 50, 50]}
