@@ -22,9 +22,10 @@ class Entity():
 #Create a class Person to inherit from Entity
 class Person(Entity):
   def __init__(self, age, sex):
+		super().__init__(ID, names)
 		self.age= age
 		self.sex= sex
-		
+	
 	def getAge(self):
     return self.age
   def getSex():
@@ -35,10 +36,28 @@ class Person(Entity):
   def setSex(self, Sex):
     self.sex= Sex
 		
-#Create a database to save students
-student=dict(ID=[1, 2], names=["Joel Ndoumbe", "Paule Hadja"], age=[1,2], level=["Master", "Master"], sex=["Male", "Female"])
-#Create a database to save teacher.
-teacher={'ID': [1], 'names':["Edinio Zacko"], 'age':[30], 'sex':["Male"], 'courseID':[1]}
+#Create a class for students
+class student(Person):
+	def __init__(self, level):
+		super().__init__(ID, names, age, sex)
+		self.level= level
+	
+	def getLevel(self):
+		return self.level
+	def setLevel(self, Level):
+		self.level= Level
+
+#Create a class for teachers
+class teacher(Person):
+	def __init__(self, courseID):
+		super().__init__(ID, names, age, sex)
+		self.courseID= courseID
+	
+	def getCourseID(self):
+		return self.courseID
+	def setCourseID(self, CourseId):
+		self.courseID= CourseId
+
 #Create a database to register courses.
 course={'ID':[1, 2], 'names':["Python programming", "Machine Learning"], 'category':["Computer Science", "Mathematics"], 'teacherID':[1,1]}
 #Create a database to save the notes.
