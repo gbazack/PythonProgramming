@@ -2,7 +2,7 @@
 Git is a distributed version control system for tracking changes in source code during software development with speed and efficiency.
 
 ## How to install Git on Ubuntu/Linux/Debian
-```
+```shell
 $ sudo apt update
 $ sudo apt install git or 
 $ sudo add-apt-repository ppa:git-core/ppa
