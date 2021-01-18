@@ -2,7 +2,7 @@
 Git is a distributed version control system for tracking changes in source code during software development with speed and efficiency.
 
 ## How to install Git on Ubuntu/Linux/Debian
-```shell
+```script
 $ sudo apt update
 $ sudo apt install git or 
 $ sudo add-apt-repository ppa:git-core/ppa
@@ -16,7 +16,8 @@ GitHub is an American multinational corporation that provides hosting for softwa
 ## Tutorial: Getting started with Git and GitHub
 
 Create a new repository  ("my-first-python-project") on GitHub and on local. Open the terminal and type the following commands:
-```
+
+```git
 $ mkdir my-first-python-project
 $ cd my-first-python-project
 $ echo "# my-first-python-project" >> README.md
@@ -32,9 +33,9 @@ $ git push -u origin master
 ```
 
 # References:
-[https://github.com/]{https://github.com/}
-[https://en.wikipedia.org/wiki/GitHub]{https://en.wikipedia.org/wiki/GitHub}
-[https://git-scm.com/docs/gittutorial]{https://git-scm.com/docs/gittutorial}
-[https://git-scm.com/download/linux]{https://git-scm.com/download/linux}
-[https://en.wikipedia.org/wiki/Git]{https://en.wikipedia.org/wiki/Git}
-[https://www.cyberciti.biz/faq/what-does-sudo-apt-get-update-command-do-on-ubuntu-debian/]{https://www.cyberciti.biz/faq/what-does-sudo-apt-get-update-command-do-on-ubuntu-debian/}
+- [https://github.com/](https://github.com/)
+- [https://en.wikipedia.org/wiki/GitHub](https://en.wikipedia.org/wiki/GitHub)
+- [https://git-scm.com/docs/gittutorial](https://git-scm.com/docs/gittutorial)
+- [https://git-scm.com/download/linux](https://git-scm.com/download/linux)
+- [https://en.wikipedia.org/wiki/Git](https://en.wikipedia.org/wiki/Git)
+- [https://www.cyberciti.biz/faq/what-does-sudo-apt-get-update-command-do-on-ubuntu-debian/](https://www.cyberciti.biz/faq/what-does-sudo-apt-get-update-command-do-on-ubuntu-debian/)
