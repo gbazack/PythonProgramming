@@ -1,4 +1,4 @@
-## Tutorial 1: School Management System 1
+## Practice Exam 1: School Management System
 
 In this practice exam, you will implement a school management system with Python data structures such as list and dictionary and interact with it via functions. More precisely, you'll:
 1. Create databases:
@@ -22,4 +22,4 @@ In this practice exam, you will implement a school management system with Python
       1. implement a function to remove a teacher
    4. Modify items of
       1. implement a function to compute a student overall grade
-      2. implement a function 
+      2. implement a function to edit a student's names
