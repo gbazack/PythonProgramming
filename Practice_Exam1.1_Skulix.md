@@ -12,12 +12,14 @@ In this practice exam, you will implement a school management system with Python
 2. Manipulate these databases:
    1. Search items from:
       1. implement functions to get the ID of any item from a database
-      1.2. implement a function to get a note of a student for a specific course
-      1.3. implement a function to get the categories of all courses attended by a student
+      2. implement a function to get a note of a student for a specific course
+      3. implement a function to get the categories of all courses attended by a student
    2. Add items to:
-      2.1. implement a function to add the attributes 'income' and 'skills' to teachers' database
-      2.2. implement a function to add the attributes 'course credit' and 'grade' to notes' database
-      2.3. implement functions to add a note, and a student
+      1. implement a function to add the attributes 'income' and 'skills' to teachers' database
+      2. implement a function to add the attributes 'course credit' and 'grade' to notes' database
+      3. implement functions to add a note, and a student
    3. Remove items from
-      3.1. 
+      1. implement a function to remove a teacher
    4. Modify items of
+      1. implement a function to compute a student overall grade
+      2. implement a function 
