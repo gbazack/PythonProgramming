@@ -3,6 +3,7 @@ This module contains functions
 which generate prime numbers
 and test if an input number is prime
 """
+import math
 
 def generate(n):
    pnList=[2,3]
